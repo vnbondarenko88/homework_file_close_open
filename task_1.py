@@ -10,7 +10,7 @@ with open('recipes.txt', 'r', encoding='UTF-8') as f:
     ingridients = food.split('\n')[2:]
     for ing in ingridients:
       ing_1 = ing.split('|')
-      ingrigients_dict = {'ingredient_name':ing_1[0], 'quantity':ing_1[1], 'meansure':ing_1[2]}
+      ingrigients_dict = {'ingredient_name':ing_1[0], 'quantity':ing_1[1], 'measure':ing_1[2]}
       if key in cook_book:
         cook_book[key].append(ingrigients_dict)
       else:
@@ -30,7 +30,7 @@ print(cook_book)
 #       ingridients = food.split('\n')[2:]
 #       for ing in ingridients:
 #         ing_1 = ing.split('|')
-#         ingrigients_dict = {'ingredient_name':ing_1[0], 'quantity':ing_1[1], 'meansure':ing_1[2]}
+#         ingrigients_dict = {'ingredient_name':ing_1[0], 'quantity':ing_1[1], 'measure':ing_1[2]}
 #         some_list.append(ingrigients_dict)    
 #       cook_book[key] = some_list
 
