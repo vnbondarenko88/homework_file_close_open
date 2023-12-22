@@ -1,7 +1,7 @@
 # with open('recipes.txt', 'r', encoding='UTF-8') as f:
 #     data = f.read()
 #     print(repr(data))
-
+import pprint
 cook_book = {}
 with open('recipes.txt', 'r', encoding='UTF-8') as f:
   data = f.read().split('\n\n')
@@ -16,7 +16,7 @@ with open('recipes.txt', 'r', encoding='UTF-8') as f:
       else:
         cook_book[key] = [ingrigients_dict]
       
-print(cook_book)
+pprint.pprint(cook_book, width=100)
 
 
 # тоже рабочее решение через список some_list
